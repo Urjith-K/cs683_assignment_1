@@ -7,12 +7,3 @@
 // your score (see the tier table the harness prints), and this same function will power a
 // real LLM inference via `make llama-demo`.
 
-#include <immintrin.h>
-
-#include "matmul.h"
-
-void matmul_optimized(const float* A, const float* B, float* C,
-                      int M, int N, int K, int lda, int ldb, int ldc) {
-    // TODO(student): replace this placeholder with your best combined implementation.
-    matmul_naive(A, B, C, M, N, K, lda, ldb, ldc);
-}
